@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nevigation_app"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentSplash"
+        android:name="com.parkingkoi.service.toolbox.view.splash.FragmentSplash"
+        android:label="FragmentSplash"
+        tools:layout="@layout/fragment_splash">
+
+        <action
+            android:id="@+id/action_fragmentSplash_to_fragmentOtpSender"
+            app:destination="@id/fragmentOtpSender" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.parkingkoi.service.toolbox.view.auth.FragmentLogin"
+        android:label="FragmentLogin"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_fragmentLogin_to_HOmeActiviy"
+            app:destination="@id/HOmeActiviy" />
+        <argument
+            android:name="userNumber"
+            app:argType="string"
+            android:defaultValue="enter your number" />
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.parkingkoi.service.toolbox.view.auth.FragmentRegistration"
+        android:label="FragmentRegistration"
+        tools:layout="@layout/fragment_registration">
+
+        <action
+            android:id="@+id/action_fragmentRegistration_to_HOmeActiviy"
+            app:destination="@id/HOmeActiviy" />
+        <argument
+            android:name="userNumber"
+            app:argType="string"
+            android:defaultValue="enter your number" />
+        <action
+            android:id="@+id/action_fragmentRegistration_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOtpSender"
+        android:name="com.parkingkoi.service.toolbox.view.otp.FragmentOtpSender"
+        android:label="FragmentOtpSender"
+        tools:layout="@layout/fragment_phonvarification">
+
+        <action
+            android:id="@+id/action_fragmentOtpSender_to_fragmentOtpReciver"
+            app:destination="@id/fragmentOtpReciver" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOtpReciver"
+        android:name="com.parkingkoi.service.toolbox.view.otp.FragmentOtpReciver"
+        android:label="FragmentOtpReciver"
+        tools:layout="@layout/fragment_otp_reciver">
+
+
+
+        <action
+            android:id="@+id/action_fragmentOtpReciver_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+        <action
+            android:id="@+id/action_fragmentOtpReciver_to_fragmentRegistration"
+            app:destination="@id/fragmentRegistration" />
+        <argument
+            android:name="userNumber"
+            app:argType="string"
+            android:defaultValue="no number added" />
+        <argument
+            android:name="varificationId"
+            app:argType="string"
+            android:defaultValue="none" />
+    </fragment>
+    <activity
+        android:id="@+id/HOmeActiviy"
+        android:name="com.parkingkoi.service.toolbox.view.dashboard.HOmeActiviy"
+        android:label="HOmeActiviy"
+        tools:layout="@layout/activity_home"/>
+</navigation>

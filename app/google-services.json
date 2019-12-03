@@ -1,0 +1,135 @@
+{
+  "project_info": {
+    "project_number": "561269578752",
+    "firebase_url": "https://testchat-bca71.firebaseio.com",
+    "project_id": "testchat-bca71",
+    "storage_bucket": "testchat-bca71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561269578752:android:d7030b00559e7da3",
+        "android_client_info": {
+          "package_name": "com.parkingkoi.employee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4FxsQqBBVH7Lav55i1i_elmyuOid1Zj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561269578752:android:32de772b5d1be950",
+        "android_client_info": {
+          "package_name": "com.parkingkoi.pk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4FxsQqBBVH7Lav55i1i_elmyuOid1Zj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561269578752:android:ae7840ba13a822a5",
+        "android_client_info": {
+          "package_name": "com.parkingkoi.pkNepal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4FxsQqBBVH7Lav55i1i_elmyuOid1Zj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561269578752:android:01aae6839d132c8a4c4ce5",
+        "android_client_info": {
+          "package_name": "com.parkingkoi.service.toolbox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561269578752-jph9fovmaqt9fgr89srh8f6vm4kkdubg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parkingkoi.service.toolbox",
+            "certificate_hash": "e622afaec666f64cd907c92cb8898d79c8ab546b"
+          }
+        },
+        {
+          "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4FxsQqBBVH7Lav55i1i_elmyuOid1Zj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561269578752-ju7d0hgv3edv9okdpvvoitk2dodm6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+<data>
+    <variable
+        name="authViewModel"
+        type="com.parkingkoi.service.toolbox.viewmodel.AuthViewModel" />
+</data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_marginBottom="30dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="105dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back,"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sign in to continue"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/ed_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/logoColor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edittext_curb_design"
+                android:maxLength="50"
+                android:text="@={authViewModel.phoneNumber}"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:gravity="center"
+                android:textColor="@color/logoColor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:inputType="textPassword"
+                android:text="@={authViewModel.password}"
+                android:background="@drawable/edittext_curb_design"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/logoColor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/ed_confirmpasscode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_curb_design"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:text="@={authViewModel.repeatPass}"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:text="Sign UP"
+                android:onClick="@{authViewModel::onTapSignUPTask}"
+                android:background="@drawable/btn_bg"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_signin"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:text="Sign In"
+                android:onClick="@{authViewModel::onTapSignin}"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_bg"
+                android:textAllCaps="false"
+                android:textColor="#ffff"
+                android:textStyle="bold" />
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="20dp" />
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>
